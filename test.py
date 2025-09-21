@@ -42,5 +42,3 @@ def create_refresh_token(email: str) -> Tuple[str, str, datetime]:
         'exp': int(exp.timestamp())
     })
     return token, jti, exp
-
-print(create_refresh_token('khvan525@gmail.com'))
