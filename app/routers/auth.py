@@ -6,7 +6,7 @@ from app.schemas.auth import TokenPair, RefreshIn
 from app.crud import user as user_crud
 from app.crud import refresh_token as rt_crud
 from app.core.security import create_access_token, create_refresh_token
-from app.database import get_session, get_current_user
+from app.db.session import get_session, get_current_user
 from app.core.security import decode_token
 
 

@@ -1,12 +1,8 @@
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
+from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import String, Integer, Boolean, DateTime, ForeignKey, UniqueConstraint
 import uuid
 from datetime import datetime, timezone
-
-
-
-class Base(DeclarativeBase):
-    pass
+from app.db.base import Base
 
 
 class User(Base):

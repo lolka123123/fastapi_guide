@@ -27,3 +27,4 @@ async def get_current_user(db: AsyncSession = Depends(get_session), token: str =
     if not user or not user.is_active:
         raise HTTPException(status_code=401, detail="User not found or inactive")
     return user
+
